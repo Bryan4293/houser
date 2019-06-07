@@ -25,7 +25,7 @@ module.exports={
     },
     update :(req,res) => {
         const db = req.app.get('db'),
-        { name, address, city, state, zip_code, image_url, mortgage, rent } = req.query,
+        { name, address, city, state, zip_code, image_url, mortgage, rent } = req.body,
         { id } = req.params
      
      db.updateHouse( id, name, address, city, state, zip_code, image_url, mortgage, rent )
