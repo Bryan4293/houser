@@ -1,0 +1,4 @@
+ALTER TABLE houses
+ADD COLUMN image_url TEXT,
+ADD COLUMN mortgage INT,
+ADD COLUMN rent INT;
